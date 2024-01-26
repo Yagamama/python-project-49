@@ -10,7 +10,7 @@ def main():
 
 def calculate(name):
     print('What is the result of the expression?')
-    for i in range(3):
+    for i in range(gl.GAMES_COUNT):
         number1 = random.randint(1,25)
         number2 = random.randint(1,10)
         operation = random.choice('+-*')

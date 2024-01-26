@@ -10,7 +10,7 @@ def main():
 
 def even(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    for i in range(3):
+    for i in range(gl.GAMES_COUNT):
         number = random.randint(1,100)
         if number % 2 == 0:
             correct_answer = 'yes' 
