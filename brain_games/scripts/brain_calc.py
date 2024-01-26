@@ -1,10 +1,10 @@
 import prompt
 import random
-import games_logic
+import brain_games.scripts.games_logic as gl
 
 
 def main():
-    name = games_logic.hello()
+    name = gl.hello()
     calculate(name)
 
 

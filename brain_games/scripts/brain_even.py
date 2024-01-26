@@ -1,11 +1,10 @@
-#!/usr/bin/env python3
 import prompt
 import random
-import games_logic
+import brain_games.scripts.games_logic as gl
 
 
 def main():
-    name = games_logic.hello()
+    name = gl.hello()
     even(name)
 
 
