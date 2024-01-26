@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import prompt
 import random
+import games_logic
 
 
 def main():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    name = games_logic.hello()
     even(name)
 
 
@@ -16,10 +15,8 @@ def even(name):
         number = random.randint(1,100)
         if number % 2 == 0:
             correct_answer = 'yes' 
-            wrong_answer = 'no'
         else:
             correct_answer = 'no' 
-            wrong_answer = 'yes'
             
         print(f'Question: {number} ')
         answer = prompt.string('Your answer: ')
