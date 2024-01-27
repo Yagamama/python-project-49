@@ -11,3 +11,14 @@ https://asciinema.org/a/n4k2Qurc8hwC9jvArgtTqcSmT brain-gcd
 https://asciinema.org/a/2OzbRr8YSEOLPrtPOKuDE9GSX brain-progression
 
 https://asciinema.org/a/N5VgjVs9Evd24HYiwVrYSEOBG brain-prime
+
+Links
+This project was built using these tools:
+
+Tool	Description
+poetry	"Python dependency management and packaging made easy"
+Py.Test	"A mature full-featured Python testing tool"
+flake8	"Your tool for style guide enforcement"
+Hexlet Ltd. logo
+
+This repository is created and maintained by the team and the community of Hexlet, an educational project. Read more about Hexlet.
