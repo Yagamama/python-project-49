@@ -1,4 +1,3 @@
-import prompt
 import random
 import brain_games.scripts.games_logic as gl
 

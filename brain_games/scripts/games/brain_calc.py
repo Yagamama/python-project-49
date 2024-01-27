@@ -1,4 +1,3 @@
-import prompt
 import random
 import brain_games.scripts.games_logic as gl
 
@@ -21,13 +20,9 @@ def calculate(name):
                 correct_answer = number1 - number2
             case '*':
                 correct_answer = number1 * number2
-        print(f'Question: {number1} {operation} {number2}')
-        answer = prompt.integer('Your answer: ')
-        if answer == correct_answer:
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}!")
+        question = str(number1) + " " + operation + " " + str(number2)
+        result = gl.is_correct(name,question, correct_answer)
+        if result == False:
             return
     print(f'Congratulations, {name}!')
 
