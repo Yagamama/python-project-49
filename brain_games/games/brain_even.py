@@ -1,4 +1,3 @@
-import prompt
 import random
 import brain_games.scripts.games_logic as gl
 
@@ -19,14 +18,6 @@ def even(name):
         result = gl.is_correct_string(name, number, correct_answer)
         if result is False:
             return
-        #print(f'Question: {number} ')
-        #answer = prompt.string('Your answer: ')
-        #if answer == correct_answer:
-        #    print('Correct!')
-        #else:
-        #    print(f"'{answer}' is wrong answer ;(. Correct answer was'",
-        #          f"{correct_answer}'.")
-        #    return
     print(f'Congratulations, {name}!')
 
 
