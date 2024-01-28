@@ -16,14 +16,17 @@ def even(name):
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        print(f'Question: {number} ')
-        answer = prompt.string('Your answer: ')
-        if answer == correct_answer:
-            print('Correct!')
-        else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was'",
-                  f"{correct_answer}'.")
+        result = gl.is_correct_string(name, number, correct_answer)
+        if result is False:
             return
+        #print(f'Question: {number} ')
+        #answer = prompt.string('Your answer: ')
+        #if answer == correct_answer:
+        #    print('Correct!')
+        #else:
+        #    print(f"'{answer}' is wrong answer ;(. Correct answer was'",
+        #          f"{correct_answer}'.")
+        #    return
     print(f'Congratulations, {name}!')
 
 
