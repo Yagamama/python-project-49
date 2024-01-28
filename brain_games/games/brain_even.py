@@ -11,18 +11,18 @@ def main():
 def even(name):
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for i in range(gl.GAMES_COUNT):
-        number = random.randint(1,100)
+        number = random.randint(1, 100)
         if number % 2 == 0:
-            correct_answer = 'yes' 
+            correct_answer = 'yes'
         else:
-            correct_answer = 'no' 
-            
+            correct_answer = 'no'
         print(f'Question: {number} ')
         answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was'",
+                  f"{correct_answer}'.")
             return
     print(f'Congratulations, {name}!')
 

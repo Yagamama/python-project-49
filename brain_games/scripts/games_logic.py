@@ -19,10 +19,11 @@ def is_correct(name, question, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answer}' is wrong answer ;(. Correct answer was '",
+              f"{correct_answer}'.")
         print(f"Let's try again, {name}!")
         return False
-    
+
 
 def is_correct_string(name, question, correct_answer):
     print(f'Question: {question}')
@@ -31,10 +32,11 @@ def is_correct_string(name, question, correct_answer):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+        print(f"'{answer}' is wrong answer ;(. Correct answer was'",
+              f"{correct_answer}'.")
         print(f"Let's try again, {name}!")
         return False
-    
+
 
 def gcd(number1, number2):
     while number1 != number2:
@@ -47,7 +49,7 @@ def gcd(number1, number2):
 
 
 def is_prime(number):
-    for i in range(2, round(math.sqrt(number))+1):
+    for i in range(2, round(math.sqrt(number)) + 1):
         if number % i == 0:
             return 'no'
     return 'yes'

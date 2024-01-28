@@ -10,8 +10,8 @@ def main():
 def calculate(name):
     print('What is the result of the expression?')
     for i in range(gl.GAMES_COUNT):
-        number1 = random.randint(1,25)
-        number2 = random.randint(1,10)
+        number1 = random.randint(1, 25)
+        number2 = random.randint(1, 10)
         operation = random.choice('+-*')
         match operation:
             case '+':
@@ -21,8 +21,8 @@ def calculate(name):
             case '*':
                 correct_answer = number1 * number2
         question = str(number1) + " " + operation + " " + str(number2)
-        result = gl.is_correct(name,question, correct_answer)
-        if result == False:
+        result = gl.is_correct(name, question, correct_answer)
+        if result is False:
             return
     print(f'Congratulations, {name}!')
 
